@@ -37,8 +37,7 @@ for i in sansurlu:
     else:
         print_listesi.append(i)
 print(print_listesi)
-print(atasozu_split)
-print(sansurlu)
+
 kazanım = atasozu_split.copy()
 #Print Kısmını Formatlamaca
 ##Buraya kadar tahmin hakkı var veriler atandı şimdi döngüye geçiyoruz
