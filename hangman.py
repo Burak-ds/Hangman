@@ -37,6 +37,9 @@ for i in sansurlu:
     else:
         print_listesi.append(i)
 print(print_listesi)
+print(atasozu_split)
+print(sansurlu)
+kazanım = atasozu_split.copy()
 #Print Kısmını Formatlamaca
 ##Buraya kadar tahmin hakkı var veriler atandı şimdi döngüye geçiyoruz
 while tahmin_hakkı>0:
@@ -54,6 +57,14 @@ while tahmin_hakkı>0:
                 print_listesi.append(i)
         print(print_listesi)
         print(colored("Kalan Tahmin Hakkı: {}".format(tahmin_hakkı),'red',attrs=['reverse', 'blink']))
+        #kazanım kontrolü burada yapılacak
+        for i in range(0,len(kazanım)):
+            if kazanım[i] == " ":
+                kazanım[i]= "/"
+        if(kazanım==sansurlu):
+            break
+        #kazanım kontrolü burada yapılacak
+
     else:
         print("Yanlış Harf")
         tahmin_hakkı -= 1
